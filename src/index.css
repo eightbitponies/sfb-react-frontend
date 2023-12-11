@@ -13,7 +13,7 @@ body {
   min-height:  100vh;
   align-items:  center;
   justify-content: center;
-  background-image: linear-gradient(90deg, purple, blue, orange, green);
+  background-image: linear-gradient(45deg, purple, blue, orange, green);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -57,5 +57,49 @@ button{
   cursor:  pointer;
   color: black;
   display: flex;
+  
 
+}
+
+.nav-grid-container {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding:  0.5rem 0rem;
+  background-color: blue;
+}
+
+.nav-logo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-content: left;
+}
+
+.nav-title{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  padding: 20px;
+  text-align: left;
+
+}
+
+.nav-username{
+  grid-column-start: 10;
+  grid-column-end: 11;
+  padding: 20px;
+  text-align: left;
+
+
+}
+
+.nav-logout{
+  grid-column-start: 11;
+  grid-column-end: 12;
+  align-content: right;
 }
